@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body{
+    margin: 0;
+    background-color: white;
+}
+
+
+#menu{
+    background-color: #008fcc; 
+    box-shadow: 1px 1px 1px gray;
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width :100%;
+}
+
+#menu div{
+    flex: 1;
+    display: flex;   
+    align-self: center;
+    justify-content: center;
+}
+ 
+#menu .logo{
+    font-family: 'Fraunces', serif;
+    color: white;
+}
+
+
+#menu .links ul{list-style-type: none;}
+#menu .links ul li{display: inline-block;}
+
+#menu .links a{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+
+
+#banner{
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a0/000_American_Pit_Bull_Terrier.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+
+.banner_text{
+    align-self: center;
+    font-size: 22px;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+
+}
+
+
+
+#join{
+    margin: 100px 30px;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 20px;
+    line-height: 2;
+}
+
+#join p::first-letter{ 
+    font-size: 50px;
+    padding-left: 5%;
+    font-family: 'Fraunces', serif;
+}
+
+#join button{ 
+    font-family: 'Fraunces', serif;
+    background-color: black;
+    color: white;
+    width: 200px;
+    border-radius: 3px;
+    border: 0px ;
+    outline: none;
+}
+
+
+#join button:hover{ 
+    cursor: pointer;
+    transition: .4s;
+    background-color: #008fcc; 
+   
+}
+
+
+#content1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#content1 div{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+#first_img{ background-image: url("https://www.aspcapetinsurance.com/media/2454/13-outdoor-activities-for-your-and-your-dog.jpg");}
+#second_img{ background-image: url("https://bartonpethotel.com/wp-content/uploads/2019/09/Barton-Lodge_Dog-Outside3-1024x768.jpg");}
+#third_img{ background-image: url("https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2020/03/12093336/AdobeStock_268126142.jpg");}
+#fourth_img{ background-image: url("https://chinaminutes.com/Portals/0/EasyDNNNews/2963/750480p585EDNmainimg-1617139.JPG");}
+#fifth_img{ background-image: url("https://static.wixstatic.com/media/49edf3_25c5fd48e403461da40e75cc3c108cab~mv2.jpg/v1/fit/w_2500,h_1330,al_c/49edf3_25c5fd48e403461da40e75cc3c108cab~mv2.jpg");}
+#sixth_img{ background-image: url("https://gbsan.com/wp-content/uploads/2020/01/Freedom-Dogs-Training-Center-in-Oceanside.jpg");}
+
+
+#critics{
+    background-color: #008fcc;
+    padding: 100px;
+}
+
+#critics h1{
+    font-family: 'Fraunces', serif;
+    color: white;
+}
+
+#critics h3{
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    color: white;
+    line-height: 1.5; 
+}
+
+
+
+#content2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#content2 div{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    background-color: #008fcc;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 15px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 1000px){
+    main{
+        margin: 0 15% 0 15%;
+    }
+    #content1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #content1 div{
+        width: 20%;
+        height: 300px;
+        margin: 5%;
+        background-size: cover;
+        background-position: center;
+         
+    }
+
+
+    #content2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #content2 div{
+        width: 20%;
+        height: 300px;
+        margin: 5%;
+        background-size: cover;
+        background-position: center;
+         
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #menu{
+        flex-direction: column; 
+    }
+      
+    #menu .links a{
+        margin: 30px;
+    }
+ 
+     
+}
